@@ -10,6 +10,8 @@ function result = gepfun(X,y,config)
 % AUTHOR:   A. Hensley, 11-Jan-2013
 % HISTORY:
 %**************************************************************************
+% Rev 1.1.      13-Jun-2018       Hensley       Updated for multivariate 
+%                                               data.
 % Rev 1.0       11-Jan-2013       Hensley       Initial Release
 %**************************************************************************
 %   MIT License
@@ -95,7 +97,7 @@ for kk = 1:config.trials
         title('Error')
         
         %Current Solution
-        syms a 
+        syms a b c d e f g h
         eval(['f = ' symb{mostfit} ';']);
         history.fun{kk} = vpa(expand(f),3);
         disp(history.fun{kk})
@@ -126,7 +128,7 @@ for kk = 1:config.trials
     end
     
     %Save Results/Simplfy Expression
-    syms a
+    syms a a b c d e f g h
     eval(['f = ' symb{mostfit} ';']);
     result.expr{kk} = symb{mostfit};
     result.fit(kk) = max(fit);
