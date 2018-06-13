@@ -10,6 +10,8 @@ function result = gepfun(X,y,config)
 % AUTHOR:   A. Hensley, 11-Jan-2013
 % HISTORY:
 %**************************************************************************
+% Rev 1.1.      13-Jun-2018       Hensley       Updated for multivariate 
+%                                               data.
 % Rev 1.0       11-Jan-2013       Hensley       Initial Release
 %**************************************************************************
 %   MIT License
