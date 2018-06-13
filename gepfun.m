@@ -128,7 +128,7 @@ for kk = 1:config.trials
     end
     
     %Save Results/Simplfy Expression
-    syms a a b c d e f g h
+    syms a b c d e f g h
     eval(['f = ' symb{mostfit} ';']);
     result.expr{kk} = symb{mostfit};
     result.fit(kk) = max(fit);
